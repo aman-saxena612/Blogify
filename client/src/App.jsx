@@ -11,7 +11,6 @@ import CreatePost from './pages/CreatePost'
 import EditPost from './pages/EditPost'
 import Profile from './pages/Profile'
 import { UserContext, UserContextProvider } from './context/UserContext'
-import MyBlogs from './pages/MyBlogs'
 
 // border-4 border-blue-500
 
@@ -29,7 +28,6 @@ const App = () => {
         <Route exact path='/posts/post/:id' element={<PostDetails />} />
         <Route exact path='/edit/:id' element={<EditPost />} />
         <Route exact path='/profile/:id' element={<Profile />} />
-        <Route exact path='/myblogs/:id' element={<MyBlogs />} />
       </Routes>
       </UserContextProvider>
       {/* <HomePosts /> */}
